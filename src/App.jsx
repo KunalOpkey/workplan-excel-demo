@@ -57,19 +57,19 @@ export default function App() {
  
         {/* Data Rows */}
         {tasks.map((task, idx) => (
-          <div
-           key={task.id}
-            className={`grid grid-cols-4 items-center p-2 border-b cursor-pointer ${
-              selectedIndex === idx ? "bg-blue-100" : "hover:bg-gray-100"
-            }`}
-            onClick={() => setSelectedIndex(idx)}
-          >
-            {/* Task name with indentation */}
-            <div style={{ paddingLeft: `${task.level * 20}px` }}
-             >{task.name}</div>
-            <div>{task.assigned}</div>
-            <div>{task.start}</div>
-            <div>{task.finish}</div>
+  <div
+key={task.id}
+    className={`grid grid-cols-4 items-center p-2 border-b cursor-pointer ${
+      selectedIndex === idx ? "bg-blue-100" : "hover:bg-gray-100"
+    }`}
+    onClick={() => setSelectedIndex(idx)}
+  >
+{task.name}</div>
+    <div>{task.assigned}</div>
+    <div>{task.start}</div>
+    <div>{task.finish}</div>
+  </div>
+))}
           </div>
         ))}
       </div>
