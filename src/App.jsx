@@ -137,7 +137,7 @@ export default function App() {
 
           <>
 
-            <h1 className="text-xl font-bold mb-4">Excel View - Indent / Outdent Demo</h1>
+            <h1 className="text-xl font-bold mb-4">Excel View</h1>
 
 
 
