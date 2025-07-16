@@ -7,11 +7,8 @@ import { useState } from "react";
 const initialTasks = [
 
   { id: 1, name: "Task 1", assigned: "Kunal", start: "2025-07-16", finish: "2025-07-21", level: 0 },
-
   { id: 2, name: "Subtask 1", assigned: "QA Team", start: "2025-07-18", finish: "2025-07-19", level: 1 },
-
   { id: 3, name: "Subtask 2", assigned: "Dev Team", start: "2025-07-19", finish: "2025-07-20", level: 1 },
-
   { id: 4, name: "Task 2", assigned: "Manager", start: "2025-07-22", finish: "2025-07-25", level: 0 }
 
 ];
@@ -25,67 +22,41 @@ export default function App() {
   const tabs = [
 
     "Overview",
-
     "Dashboard",
-
     "List",
-
     "Gantt",
-
     "Board View",
-
     "Excel View",
-
     "Process Map",
-
     "Documents",
-
     "Test Cases",
-
     "Test Suites",
-
     "Test Run",
-
     "User Guide"
-
   ];
 
   const [activeTab, setActiveTab] = useState("Overview");
 
-
-
   // ✅ Excel View States
 
   const [selectedIndex, setSelectedIndex] = useState(null);
-
   const [tasks, setTasks] = useState(initialTasks);
-
-
 
   // ✅ Indent Logic
 
   const indentTask = (index) => {
-
     if (index === 0) return; // first task can't be indented
-
     let updated = [...tasks];
-
     updated[index].level = Math.min(updated[index].level + 1, updated[index - 1].level + 1);
-
     setTasks(updated);
 
   };
 
-
-
   // ✅ Outdent Logic
 
   const outdentTask = (index) => {
-
     let updated = [...tasks];
-
     updated[index].level = Math.max(updated[index].level - 1, 0);
-
     setTasks(updated);
 
   };
