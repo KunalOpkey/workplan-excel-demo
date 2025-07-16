@@ -187,13 +187,10 @@ export default function App() {
 
               <div className="grid grid-cols-4 bg-gray-200 font-semibold p-2 border-b">
 
-                <div>Task Name</div>
+                <div>Milestone 01<div>
 
-                <div>Assigned To</div>
+                <div>Created By</div>
 
-                <div>Start</div>
-
-                <div>Finish</div>
 
               </div>
 
