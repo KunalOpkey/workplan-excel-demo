@@ -64,7 +64,10 @@ key={task.id}
             }`}
             onClick={() => setSelectedIndex(idx)}
           >
-{task.name}</div>
+            {/* Task name with indentation */}
+            <div style={{ paddingLeft: `${task.level * 20}px` }}>
+{task.name}
+            </div>
             <div>{task.assigned}</div>
             <div>{task.start}</div>
             <div>{task.finish}</div>
