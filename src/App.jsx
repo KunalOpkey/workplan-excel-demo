@@ -25,7 +25,7 @@ export default function App() {
  
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">Excel View - Indent / Outdent Demo</h1>
+      <h1 className="text-2xl font-bold mb-4">Excel View</h1>
  
       {/* Buttons */}
       <div className="flex gap-3 mb-4">
@@ -34,14 +34,14 @@ export default function App() {
           disabled={selectedIndex === null}
           className="px-4 py-2 bg-green-600 text-white rounded disabled:bg-gray-400"
         >
-          Indent (Ctrl + ])
+          Indent -->
         </button>
         <button
           onClick={() => outdentTask(selectedIndex)}
           disabled={selectedIndex === null}
           className="px-4 py-2 bg-blue-600 text-white rounded disabled:bg-gray-400"
         >
-          Outdent (Ctrl + [)
+          Outdent <--
         </button>
       </div>
  
