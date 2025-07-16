@@ -218,15 +218,11 @@ export default function App() {
 
                   <div style={{ paddingLeft: `${task.level * 20}px` }}>
 
-                   {task.name}
+                   {task.Milestone 01}
 
                   </div>
 
-                  <div>{task.assigned}</div>
-
-                  <div>{task.start}</div>
-
-                  <div>{task.finish}</div>
+                  <div>{task.Created By}</div>
 
                 </div>
 
